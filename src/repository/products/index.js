@@ -12,7 +12,7 @@ const {
     insertCategoryQuery} = require ('./queries.js')
 
 
-const makeProductsRepository = (connection) => {
+const productsRepository = (connection) => {
 
     const queryConnection = query(connection)
 
@@ -50,11 +50,11 @@ const makeProductsRepository = (connection) => {
         queryConnection(removeQuery)
     )
 
-    const removeCategory =   composeWithPromise(
+    const removeCategory = composeWithPromise(
         queryConnection(removeCategoryQuery)
     )
 
-    const addCategory =   composeWithPromise(
+    const addCategory = composeWithPromise(
         queryConnection(insertCategoryQuery)
     )
 
@@ -71,4 +71,4 @@ const makeProductsRepository = (connection) => {
     }
 }
 
-module.exports = makeProductsRepository
+module.exports = productsRepository

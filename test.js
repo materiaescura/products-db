@@ -1,6 +1,6 @@
-const conn = require('./infra/connection.js')
-const categoriesRepository = require('./infra/repository/category/category.js')
-const productsRepository = require('./infra/repository/products/products.js')
+const conn = require('./src/connection.js')
+const categoriesRepository = require('./src/repository/category/index.js')
+const productsRepository = require('./src/repository/products/index.js')
 
 const test = async() => {
     const categories = await categoriesRepository(await conn)
@@ -40,7 +40,7 @@ const test = async() => {
     // console.log(await products.addCategory({
     //     product_id:5,
     //     category_id: 7
-    // }))
+    // }))n
 
     console.log(await products.findAll())
 
