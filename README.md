@@ -18,8 +18,8 @@ npm install
 
 1. No arquivo .env preencher as configurações local do MYSQL
 2. Importar a conexão, ex: ```  const connection = require('./src/connection.js') ```
-3. Criar um novo repositório, ex: const products = await productsRepository(await connection)
-4. Agora estamos pronto para usar o repositório, ex:  await products.create({product:'foo', price:'2000'}))
+3. Criar um novo repositório, ex:  ``` const products = await productsRepository(await connection) ```
+4. Agora estamos pronto para usar o repositório, ex:  ``` await products.create({product:'foo', price:'2000'})) ```
 
 
 ## Construído com:
