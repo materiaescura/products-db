@@ -1,0 +1,17 @@
+{
+  "name": "db-products",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Diego Rabelo <rabelo.github@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mysql2": "^3.3.2",
+    "ramda": "^0.29.0"
+  }
+}
